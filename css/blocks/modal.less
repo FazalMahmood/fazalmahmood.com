@@ -1,0 +1,82 @@
+// main: ../style.less
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: fade(@black, 70%);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 1rem;
+    overflow: auto;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.modal__dialog {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    transform: rotateX(90deg);
+    transition: transform .2s linear;
+
+    &--sm {
+        max-width: 900px;
+    }
+
+}
+
+.modal__close {
+    width: 34px;
+    height: 39px;
+    position: absolute;
+    top: 0.9rem;
+    right: 1rem;
+    z-index: 1;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    transition: transform .2s linear;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        transform: rotate(90deg);
+    }
+}
+
+.modal__content {
+    padding: 5rem 1rem;
+
+}
+
+.modal__title {
+    margin-bottom: 3.6rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media @mobile {
+        font-size: 2rem;
+    }
+}
+
+.modal__subtitle {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+
+    @media @mobile {
+        font-size: 12px;
+    }
+}
