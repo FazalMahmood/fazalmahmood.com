@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         var formData = new FormData(this);
 
-        fetch("https://solutions.fazalmahmood.com/submit.php", {
+        fetch("https://smtpmailer.fazalmahmood.com/submit.php", {
             method: "POST",
             mode: "cors", // Add this line to enable CORS
             body: formData
