@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/41064ceb63.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Easy Appointments Promotion</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="images/user_avatar.png" alt="">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Fazal<br>Mahmood</div>
+                        <div class="user__prof">FOSS Specialist</div>
+                    </div>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="https://fazalmahmood.com">Home</a>
+                    <a class="nav__link" href="https://fazalmahmood.com/#about">About</a>
+                    <a class="nav__link" href="solutions">Solutions</a>
+                    <a class="nav__link" href="#blog">Blog</a>
+                    <a class="nav__link" href="#" data-modal="#modal__hire_me">Contact</a>
+                    <a class="nav__link nav__link--btn" href="#" data-modal="#modal__consultation">Get a Free Consultation</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+<section style="max-width: 1280px; margin: 50px auto; padding: 40px; background-color: #2b2a2c; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+  <!-- Feature Image -->
+  <img src="images/easy-appointments-promo_1280x564.png" alt="Easy Appointments Promo" style="width: 100%; border-radius: 10px 10px 0 0;">
+
+  <div style="padding: 20px; margin-top: 20px;">
+    <h1 style="font-size: 2.5em; color: #f1f3f4; text-align: center; margin-bottom: 20px;">Get Easy Appointments Self-Hosted App - Special Promo</h1>
+
+    <p style="font-size: 1.2em; line-height: 1.6; color: #f1f3f4; text-align: center;">
+      Take advantage of our limited-time offer for <strong style="color: #50c8a7;">Easy Appointments</strong>! Pay just <strong style="color: #50c8a7;">$43.39 USD</strong> one-time setup fee, and no monthly subscriptions, no limits! Regular price is <del style="color: brown;">$120 USD</del> -
+      you're saving a massive <strong style="color: #50c8a7;">64%</strong> OFF!
+    </p>
+
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="https://demo.easyappointments.org/" target="_blank" rel="nofollow" class="btn" type="button" style="padding: 10px 20px; font-size: 1.1em; background-color: #1d72b8; color: white; text-decoration: none; border-radius: 5px; margin-right: 20px; border: solid 1px rgb(66 133 244 / 38%);">
+        View Live Demo
+      </a>
+      <a href="https://demo.easyappointments.org/index.php/login" target="_blank" rel="nofollow" class="btn" type="button" style="padding: 10px 20px; font-size: 1.1em; background-color: #1d72b8; color: white; text-decoration: none; border-radius: 5px; border: solid 1px rgb(66 133 244 / 38%);">
+        Backend Demo
+      </a>
+    </div>
+
+    <div class="payment-options" style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid #eee;">
+      <!-- PayPal Button -->
+      <div style="text-align: center;">
+        <h3 style="color: #f1f3f4; margin-bottom: 10px;">Order Now with PayPal or Credit Card</h3>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="display: inline-block;">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="9M2Y6EGXZ6F5U" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <div class="btn"><input type="image" src="images/paypal.png" border="0" name="submit" title="PayPal" alt="Order Now" style="border-radius: 30px; border: 0.01em solid #333c63;" /></div>
+        </form>
+      </div>
+
+      <!-- Interac e-Transfer Option -->
+      <div style="text-align: center;">
+        <h3 style="color: #f1f3f4; margin-bottom: 10px;"><img src="images/ca_flag.svg" alt="Canadian Flag" style="width: 20px; vertical-align: middle; margin-left: 5px;" /> Interac e-Transfer</h3>
+        <a href="http://127.0.0.1:5000/" class="btn" type="button" data-modal="#modal__interac" style="display: inline-block;">
+          <img src="images/interac.png" alt="Interac e-Transfer" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Responsive Adjustments -->
+    <style>
+      @media (max-width: 768px) {
+        .payment-options {
+          flex-direction: column; /* Stack vertically on small screens */
+        }
+        .payment-options div {
+          margin-bottom: 20px; /* Add spacing between the sections */
+        }
+      }
+    </style>
+
+    <!-- Details Section -->
+    <div style="margin-top: 40px; background-color: #101010; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+      <h2 style="font-size: 1.8em; color: #f1f3f4; text-align: center; margin-bottom: 20px;">What's Included in the Setup</h2>
+      <ul style="font-size: 1.1em; line-height: 1.8; color: #f1f3f4; padding-left: 20px;">
+        <li>Full Easy Appointments application installation and configuration on your server.</li>
+        <li>Custom domain setup and configuration for your business.</li>
+        <li>Integration with email notification systems (Gmail, SMTP, etc.).</li>
+        <li>Initial user setup and role configuration (Admins, Staff, etc.).</li>
+        <li>Support for service categories, staff schedules, and time slots.</li>
+        <li>Ongoing support for the first 30 days after setup.</li>
+      </ul>
+    </div>
+
+    <!-- Add-ons Section -->
+    <div style="margin-top: 40px; background-color: #101010; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+      <h2 style="font-size: 1.8em; color: #f1f3f4; text-align: center; margin-bottom: 20px;">Available Add-ons</h2>
+      <ul style="font-size: 1.1em; line-height: 1.8; color: #f1f3f4; padding-left: 20px;">
+        <li>Custom branding and theme setup for your business.</li>
+        <li>Calendar sync support with Google Calendar.</li>
+        <li>Advanced reporting and analytics.</li>
+        <li>Multiple location support for appointments.</li>
+        <li>Payment gateway integration (Stripe, PayPal).</li>
+        <li>Custom SMS and email notifications.</li>
+        <li>Additional security features and backup options.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+            <div class="news__header" id="blog">
+                <h3 class="news__title">Discover more</h3>
+                <div class="news__text">You Might Also Like</div>
+            </div>
+
+    <div class="works" id="solutions">
+        <div class="container">
+            <div class="works__nav">
+                <a href="#" class="works__nav-link" data-filter="all">All</a>
+                <a href="#" class="works__nav-link" data-filter="collaboration">Collaboration</a>
+                <a href="#" class="works__nav-link" data-filter="productivity">Productivity</a>
+                <a href="#" class="works__nav-link" data-filter="web">CMS & Web</a>
+                <a href="#" class="works__nav-link" data-filter="finance">Finance</a>
+                <a href="#" class="works__nav-link" data-filter="communication">Communication</a>
+            </div>
+
+            <div class="portfolio">
+
+                <div class="portfolio__col" data-cat="collaboration">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="images/solutions/nextcloud_370x300.png" alt="Image with work">
+                        <div class="work__content">
+                            <div class="work__title">
+                                    Nextcloud
+                                    <div class="work__cat">Collaboration</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="productivity">
+                        <div class="work" data-modal="#modal_project_2">
+                            <img class="work__image" src="images/solutions/appflowy_370x300.png" alt="Image with work">
+                            <div class="work__content">
+                                <div class="work__title">
+                                    AppFlowy
+                                    <div class="work__cat">Productivity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col" data-cat="web">
+                        <div class="work" data-modal="#modal_project_3">
+                            <img class="work__image" src="images/solutions/wordpress_370x300.png" alt="Image with work">
+                            <div class="work__content">
+                                <div class="work__title">
+                                        WordPress
+                                        <div class="work__cat">CMS & Web</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col" data-cat="communication">
+                        <div class="work" data-modal="#modal_project_4">
+                            <img class="work__image" src="images/solutions/jitsi_370x300.png" alt="Image with work">
+                            <div class="work__content">
+                                <div class="work__title">
+                                    Jitsi Meet
+                                    <div class="work__cat">Communication</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col" data-cat="web">
+                        <div class="work" data-modal="#modal_project_5">
+                            <img class="work__image" src="images/solutions/cal_370x300.png" alt="Image with work">
+                            <div class="work__content">
+                                <div class="work__title">
+                                        Cal
+                                        <div class="work__cat">CMS & Web</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col" data-cat="web">
+                        <div class="work" data-modal="#modal_project_6">
+                            <img class="work__image" src="images/solutions/baserow_370x300.png" alt="Image with work">
+                            <div class="work__content">
+                                <div class="work__title">
+                                        Baserow
+                                        <div class="work__cat">CMS & Web</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col" data-cat="finance">
+                        <div class="work" data-modal="#modal_project_7">
+                            <img class="work__image" src="images/solutions/invoiceninja_370x300.png" alt="Image with work">
+                            <div class="work__content">
+                                <div class="work__title">
+                                        Invoice Ninja
+                                        <div class="work__cat">Finance</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col" data-cat="collaboration">
+                        <div class="work" data-modal="#modal_project_8">
+                            <img class="work__image" src="images/solutions/dolibarr_370x300.png" alt="Image with work">
+                            <div class="work__content">
+                                <div class="work__title">
+                                        Dolibarr
+                                        <div class="work__cat">Collaboration</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__col" data-cat="media">
+                        <div class="work" data-modal="#modal_project_9" >
+                            <img class="work__image" src="images/solutions/jellyfin_370x300.png" alt="Image with work">
+                            <div class="work__content">
+                                <div class="work__title">
+                                        Jellyfin
+                                        <div class="work__cat">Media</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="text-center">
+                <a href="solutions" class="btn btn--sm">See more</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                        <a href="license"><span class="creative-commons">cc</span> fazalmahmood.com</a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="" class="footer__social-icon" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nav">
+                    <a href="solutions" class="footer__nav-link">Solutions</a>
+                    <a href="https://fazalmahmood.com/#about" class="footer__nav-link">About</a>
+                    <a href="#blog" class="footer__nav-link">Blog</a>
+                    <a href="#" data-modal="#modal__hire_me" class="footer__nav-link">Contact</a>
+                    <a class="footer__nav-link footer__nav-link--btn" href="#" data-modal="#modal__consultation">Let's Talk</a>
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal Windows -->
+
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/nextcloud_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/nextcloud_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Nextcloud</h3>
+                        <div class="modal-work__info">
+                            Online File Storage
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Nextcloud is a suite of client-server software that enables the creation and utilization of file hosting services. It offers functionality similar to popular services such as Dropbox, or Google Drive, particularly when used alongside integrated office suites with Collabora Online.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/appflowy_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/appflowy_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">AppFlowy</h3>
+                        <div class="modal-work__info">
+                            Project Management
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>AppFlowy offers an open-source option as an alternative to Notion, providing control over your data and customization options.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/wordpress_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/wordpress_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">WordPress</h3>
+                        <div class="modal-work__info">
+                            Websites & Forums
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Originally developed as a blogging tool, WordPress has evolved into a comprehensive web content management system supporting various types of content, such as traditional websites, mailing lists, and Internet forums.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal_project_4">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/jitsi_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/jitsi_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Jitsi Meet</h3>
+                        <div class="modal-work__info">
+                            Video Conferencing
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>A VoIP and instant messaging application that includes video conferencing features.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="modal" id="modal_project_5">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/cal_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/cal_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Cal</h3>
+                        <div class="modal-work__info">
+                            Online Meeting Scheduling 
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>An open-source meeting scheduling infrastructure tailored for personal or business needs.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal_project_6">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/baserow_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/baserow_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Baserow</h3>
+                        <div class="modal-work__info">
+                            Web Forms
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Baserow is an open-source, user-friendly online database tool that simplifies database creation and management without programming. It's versatile, scalable, and suitable for personal and enterprise projects.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal_project_7">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/invoiceninja_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/invoiceninja_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Invoice Ninja</h3>
+                        <div class="modal-work__info">
+                            Online Invoicing Software
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>An online invoicing platform, available for free, assists in generating and managing invoices, accepting payments, tracking time, and syncing with your bank and inventory. It allows you to customize invoices and integrate with payment gateways.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal_project_8">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/dolibarr_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/dolibarr_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Dolibarr</h3>
+                        <div class="modal-work__info">
+                            Business Collaboration
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>An open-source ERP and CRM software designed for small to medium-sized enterprises, offering features like invoicing, accounting, inventory, and project management for efficient business management.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="modal" id="modal_project_9">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/close.png" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img src="images/solutions/jellyfin_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                        <div>
+                            <img src="images/solutions/jellyfin_preview_790x780.png" class="modal-work__photo" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="model-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Jellyfin</h3>
+                        <div class="modal-work__info">
+                            Media Server
+                        </div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>A media system that enables streaming of personal media to any device from a self-hosted server. Jellyfin allows users to enjoy movies, shows, music, live TV, books, and photos, all while maintaining complete control over their data.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button type="button" class="modal-work__btn slickPrev">
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="modal-work__btn slickNext">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="modal" id="modal__hire_me">
+            <div class="modal__dialog modal__dialog--sm">
+    
+                <button class="modal__close" type="button" data-close>
+                    <img src="images/close.png" alt="Close">
+                </button>
+
+
+                <div class="contact">
+                    <div class="contact__left">
+                        <h3 class="modal__title mb-0">Contact Me</h3>
+                        <h4 class="modal__subtitle">Leave me a message</h4><br></br>
+
+                        <form id="contactForm">
+
+                            <div class="form-group">
+                                <label for="input-email" class="form__label">Name</label>
+                                <input type="text" class="form__input" name="name" id="name" placeholder="Your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-email" class="form__label">Email</label>
+                                <input type="text" class="form__input" name="email" id="email" placeholder="Your email address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-text" class="form__label">Message</label>
+                                <textarea class="form__textarea" name="message" id="message" placeholder="Type your message..." required></textarea>
+                            </div>
+                            
+                            <div class="text-left">
+                                <button class="btn" type="submit">Send</button>
+                                <div id="response"></div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="modal" id="modal__interac">
+            <div class="modal__dialog modal__dialog--sm">
+
+            <!-- Cal inline embed code begins -->
+                    <iframe src="https://orders.fazalmahmood.com" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
+            <!-- Cal inline embed code ends -->
+            </div>
+        </div>
+
+        <div class="modal" id="modal__consultation">
+            <div class="modal__dialog modal__dialog--sm">
+
+            <!-- Cal inline embed code begins -->
+                    <iframe src="https://appointments.fazalmahmood.com/index.php?service=2" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
+            <!-- Cal inline embed code ends -->
+            </div>
+        </div>
+        
+    <!-- JS -->
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>
