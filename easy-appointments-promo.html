@@ -64,37 +64,49 @@
       </a>
     </div>
 
-    <div class="payment-options" style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid #eee;">
-      <!-- PayPal Button -->
-      <div style="text-align: center;">
-        <h3 style="color: #f1f3f4; margin-bottom: 10px;">Order Now with PayPal or Credit Card</h3>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="display: inline-block;">
-          <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="9M2Y6EGXZ6F5U" />
-          <input type="hidden" name="currency_code" value="USD" />
-          <div class="btn"><input type="image" src="images/paypal.png" border="0" name="submit" title="PayPal" alt="Order Now" style="border-radius: 30px; border: 0.01em solid #333c63;" /></div>
-        </form>
-      </div>
+    <div class="payment-options" style="margin-top: 30px; padding-top: 20px;">
 
-      <!-- Interac e-Transfer Option -->
-      <div style="text-align: center;">
-        <h3 style="color: #f1f3f4; margin-bottom: 10px;"><img src="images/ca_flag.svg" alt="Canadian Flag" style="width: 20px; vertical-align: middle; margin-left: 5px;" /> Interac e-Transfer</h3>
-        <a href="http://127.0.0.1:5000/" class="btn" type="button" data-modal="#modal__interac" style="display: inline-block;">
-          <img src="images/interac.png" alt="Interac e-Transfer" />
-        </a>
-      </div>
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="color: #f1f3f4; border-bottom: 2px solid #eee; padding-bottom: 4px;">Place an Order</h2>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+            <!-- PayPal Button -->
+            <div style="text-align: center; flex: 1; min-width: 200px;">
+                <h3 style="color: #f1f3f4; margin-bottom: 10px;">PayPal or Credit Card</h3>
+                <a class="btn" type="button" data-modal="#modal__paypal" style="display: inline-block;">
+                    <img src="images/paypal.png" alt="PayPal or Credit Card" style="border-radius: 30px;" />
+                </a>
+            </div>
+
+            <!-- Interac e-Transfer Option -->
+            <div style="text-align: center; flex: 1; min-width: 200px;">
+                <h3 style="color: #f1f3f4; margin-bottom: 10px;">
+                    <img src="images/ca_flag.svg" alt="Canadian Flag" style="width: 20px; vertical-align: middle; margin-left: 5px;" />
+                    Interac e-Transfer
+                </h3>
+                <a class="btn" type="button" data-modal="#modal__interac" style="display: inline-block;">
+                    <img src="images/interac.png" alt="Interac e-Transfer" />
+                </a>
+            </div>
+        </div>
     </div>
 
     <!-- Responsive Adjustments -->
     <style>
-      @media (max-width: 768px) {
-        .payment-options {
-          flex-direction: column; /* Stack vertically on small screens */
+        @media (max-width: 768px) {
+            .payment-options {
+                flex-direction: column; /* Stack vertically on small screens */
+                align-items: center; /* Center align items */
+            }
+            .payment-options div {
+                margin-bottom: 20px; /* Add spacing between the sections */
+                text-align: center; /* Center-align the content for smaller screens */
+                flex: none; /* Remove flex grow/shrink for stacking */
+                width: 100%; /* Full width for each option */
+            }
         }
-        .payment-options div {
-          margin-bottom: 20px; /* Add spacing between the sections */
-        }
-      }
     </style>
 
     <!-- Details Section -->
@@ -764,6 +776,15 @@
                     </div>
                 </div>
             
+            </div>
+        </div>
+
+        <div class="modal" id="modal__paypal">
+            <div class="modal__dialog modal__dialog--sm">
+
+            <!-- Cal inline embed code begins -->
+                    <iframe src="https://orders.fazalmahmood.com/payments" width="100%" height="800px" frameborder="0" scrolling="no"></iframe>
+            <!-- Cal inline embed code ends -->
             </div>
         </div>
 
