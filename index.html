@@ -1048,7 +1048,15 @@
                                 <label for="input-text" class="form__label">Message</label>
                                 <textarea class="form__textarea" name="message" id="message" placeholder="Type your message..." required></textarea>
                             </div>
-                            
+
+                            <div class="form-group captcha-box">
+                                <p>What is {{ num1 }} + {{ num2 }}?</p>
+                                <input type="text" name="captcha" placeholder="Enter result" required>
+                                {% if error %}
+                                <p class="error">{{ error }}</p>
+                                {% endif %}
+                            </div>
+
                             <div class="text-left">
                                 <button class="btn" type="submit">Send</button>
                                 <div id="response"></div>
