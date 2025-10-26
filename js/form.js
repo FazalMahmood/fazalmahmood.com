@@ -1,21 +1,23 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Generate math CAPTCHA
-    const num1 = Math.floor(Math.random() * 10) + 1;
-    const num2 = Math.floor(Math.random() * 10) + 1;
-    const captchaResult = num1 + num2;
-
+    // Select elements
     const captchaQuestion = document.getElementById("captchaQuestion");
     const captchaInput = document.getElementById("captchaInput");
     const captchaError = document.getElementById("captchaError");
+    const contactForm = document.getElementById("contactForm");
+
+    // Generate CAPTCHA
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    let num2 = Math.floor(Math.random() * 10) + 1;
+    let captchaResult = num1 + num2;
     captchaQuestion.textContent = `What is ${num1} + ${num2}?`;
 
-    // Handle form submission
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
+    contactForm.addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent default form submission
 
         // CAPTCHA validation
-        if (parseInt(captchaInput.value) !== captchaResult) {
+        const userAnswer = parseInt(captchaInput.value);
+        if (isNaN(userAnswer) || userAnswer !== captchaResult) {
             captchaError.textContent = "Incorrect answer. Please try again.";
             captchaError.style.display = "block";
             return; // Stop form submission
@@ -23,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
             captchaError.style.display = "none";
         }
 
-        // Continue with form submission
-        var formData = new FormData(this);
+        // Continue with AJAX submission
+        const formData = new FormData(contactForm);
 
         fetch("https://smtpmailer.fazalmahmood.com/submit.php", {
             method: "POST",
-            mode: "cors", // Enable CORS
+            mode: "cors",
             body: formData
         })
         .then(response => {
@@ -39,13 +41,13 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .then(data => {
             document.getElementById("response").innerHTML = data;
-            // Optionally reset the form and CAPTCHA
-            this.reset();
-            const newNum1 = Math.floor(Math.random() * 10) + 1;
-            const newNum2 = Math.floor(Math.random() * 10) + 1;
-            captchaQuestion.textContent = `What is ${newNum1} + ${newNum2}?`;
-            captchaInput.value = "";
-            captchaResult = newNum1 + newNum2; // Update the CAPTCHA result
+            contactForm.reset();
+
+            // Generate new CAPTCHA
+            num1 = Math.floor(Math.random() * 10) + 1;
+            num2 = Math.floor(Math.random() * 10) + 1;
+            captchaResult = num1 + num2;
+            captchaQuestion.textContent = `What is ${num1} + ${num2}?`;
         })
         .catch(error => {
             console.error("Error:", error);
