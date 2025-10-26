@@ -4,23 +4,31 @@ document.addEventListener("DOMContentLoaded", function() {
     const captchaError = document.getElementById("captchaError");
     const contactForm = document.getElementById("contactForm");
 
-    // Generate CAPTCHA
-    let num1 = Math.floor(Math.random() * 10) + 1;
-    let num2 = Math.floor(Math.random() * 10) + 1;
-    let captchaResult = num1 + num2;
-    captchaInput.placeholder = `What is ${num1} + ${num2}?`;
+    // Function to generate new CAPTCHA
+    function generateCaptcha() {
+        const num1 = Math.floor(Math.random() * 10) + 1;
+        const num2 = Math.floor(Math.random() * 10) + 1;
+        captchaInput.dataset.result = num1 + num2; // store correct answer in data attribute
+        captchaInput.placeholder = `What is ${num1} + ${num2}?`;
+        captchaInput.value = ""; // clear previous answer
+        captchaError.style.display = "none";
+    }
+
+    generateCaptcha(); // Generate initial CAPTCHA
 
     contactForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
         const userAnswer = parseInt(captchaInput.value);
-        if (isNaN(userAnswer) || userAnswer !== captchaResult) {
+        const correctAnswer = parseInt(captchaInput.dataset.result);
+
+        if (isNaN(userAnswer) || userAnswer !== correctAnswer) {
             captchaError.textContent = "Incorrect answer. Please try again.";
             captchaError.style.display = "block";
-            return;
-        } else {
-            captchaError.style.display = "none";
+            return; // Stop submission
         }
+
+        captchaError.style.display = "none";
 
         // Continue with AJAX submission
         const formData = new FormData(contactForm);
@@ -33,12 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             document.getElementById("response").innerHTML = data;
             contactForm.reset();
-
-            // Generate new CAPTCHA
-            num1 = Math.floor(Math.random() * 10) + 1;
-            num2 = Math.floor(Math.random() * 10) + 1;
-            captchaResult = num1 + num2;
-            captchaInput.placeholder = `What is ${num1} + ${num2}?`;
+            generateCaptcha(); // Generate a new CAPTCHA after submission
         })
         .catch(error => {
             console.error(error);
